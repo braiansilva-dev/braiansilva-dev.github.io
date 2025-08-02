@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braian Silva | Desarrollador Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+            
+        <nav class="nav">
+            <a href="#inicio" class="nav__logo">B<span>S</span></a>
+            <ul class="nav__list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#contacto">Contácteme</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main class="inicio" id="inicio">
+        <div class="inicio__img"> 
+            
+            <h3 class="inicio__nombre">Braian Silva</h3>
+            <p class="inicio__parrafo">Estudiante de <span>JaP</span></p>
+        </div>
+    </main>
+
+    <section id="sobremi">
+        <h2 class="sobremi">Sobre Mi</h2>
+        <div class="sobremi__cont">
+            <img class="sobremi__foto" src="fotos/perfil.jpg" alt="Foto de perfil Braian Silva"> 
+            <p class="sobremi__inf">Hola soy Braian, estudiante de Programación web con aspiración a desarrollador full stack,
+                Actualmente formo parte del programa Jóvenes a Programar y también me capacito de forma
+                autodidacta. 
+                Me interesa crear sitios web modernos y funcionales y estoy en proceso de desarrollar mis
+                propios proyectos.
+                Vivo en Maldonado, Uruguay. Y mi objetivo es comenzar a trabajar como desarrollador para seguir
+                aprendiendo, creciendo y aportando soluciones digitales.
+            </p>
+        </div>
+    </section>
+    
+    <section id="estudios">
+        <h2 class="estudios">Estudios / Habilidades</h2>
+        <div class="estudios__cont">
+            <div class="estudios__columna">
+                <h4>Mis estudios son:</h4>
+                <ul class="estudios__lista">
+                    <li>Bachillerato Completo</li>
+                    <li>Ciberseguridad Principiante</li>
+                    <li>Jóvenes a Programar</li>
+                    <li>Autodidacta</li>
+                </ul>
+            </div>
+            <div class="estudios__columna">
+                <h4>Mis habilidades son:</h4>
+                <ul class="estudios__lista">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="contacto__txt">Contacto</h2>
+        <div>
+            <form class="form">
+                <fieldset class="form__fiel">
+                    
+                    <div class="form__formulario">
+                        <label class="form__label" for="nombre">Nombre:</label>
+                        <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    
+                    <div class="form__formulario">
+                        <label class="form__label" for="correo">Email:</label>
+                        <input class="form__input" type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.com" required>
+                    </div>
+                    
+                    <div class="form__formulario">
+                        <label class="form__label" for="mensaje">Mensaje:</label>
+                        <textarea class="form__input" id="mensaje" name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    
+                    <button class="form__btn" type="submit">Enviar</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <p class="footer_p">Todos los derechos reservados Braian Silva 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
