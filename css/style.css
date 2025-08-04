@@ -240,6 +240,40 @@ p {
   padding-top: 8rem;
 }
 
+.contacto__redes {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.btn-red {
+  text-decoration: none;
+  color: var(--color-formulario);
+  background-color: var(--color-boton);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-icon {
+  width: 24px;
+  height: 22px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  filter: brightness(0%) saturate(100%); /* convierte a negro los iconos */
+}
+
+
+.btn-red:hover {
+  background-color: var(--color-boton-hover);
+  transform: scale(1.05);
+  color: var(--color-fondo);
+}
+
+
 .form {
   background-color: var(--color-formulario);
   max-width: 600px;        
@@ -290,11 +324,13 @@ p {
   border: none;
   border-radius: .5rem;
   text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .form__btn:hover {
   background-color: var(--color-boton-hover);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 /** FOOTER **/
