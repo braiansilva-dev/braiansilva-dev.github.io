@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portafolio Personal",
+      "description": "Portafolio personal creado con HTML, CSS y JavaScript",
+      "image": "/img/proyectoPortafolio.webp",
+      "github": "https://github.com/braiansilva-dev/braiansilva-dev.github.io"
+    },
+    {
+      "id": 2,
+      "title": "Proyecto 2",
+      "description": "Coming soon",
+      "image": "/img/comingSoon.webp",
+      "github": "#"
+    },
+    {
+      "id": 3,
+      "title": "Proyecto 3",
+      "description": "Coming soon",
+      "image": "/img/comingSoon.webp",
+      "github": "#"
+    }
+  ]
+}

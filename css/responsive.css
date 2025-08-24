@@ -1,0 +1,251 @@
+
+/* TABLET Y MÓVIL HORIZONTAL - 768px */
+@media (max-width: 768px) {
+    html {
+        font-size: 56%;
+    }
+
+    header {
+        padding: 0.1rem 2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        padding: 2rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .social-icons {
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .inicio__img {
+        padding-top: 15rem;
+    }
+
+    .inicio__nombre {
+        font-size: 7rem;
+    }
+
+    .inicio__nombre span {
+        font-size: 14rem;
+        color: var(--violetaOscuro);
+    }
+
+
+    .inicio__parrafo {
+        font-size: 7rem;
+    }
+
+    #sobremi,
+    #portafolio,
+    #estudios {
+        margin-top: 7rem;
+        scroll-margin-top: 8rem;
+    }
+    .sobremi__cont {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem 1rem;
+        text-align: justify;
+    }
+
+    .sobremi__foto {
+        max-width: 280px;
+        order: 1;
+    }
+
+    .sobremi__inf {
+        text-align: justify;
+        order: 2;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        padding: 0 5rem;
+    }
+
+    .estudios__cont {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .estudios__columna {
+        text-align: left;
+        max-width: 300px;
+    }
+
+
+    .contacto__redes {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .btn-red {
+        min-width: 200px;
+        justify-content: center;
+    }
+
+    .portafolio__cont {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.8rem;
+    }
+    
+    .project-description {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* MÓVIL VERTICAL - 480px */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 0.1rem 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .inicio__img {
+        padding: 12rem 1rem 4rem;
+    }
+
+    .inicio__nombre {
+        font-size: 7rem;
+        line-height: 1.1;
+    }
+
+    .inicio__nombre span {
+        font-size: 10rem;
+    }
+    .inicio__parrafo {
+        font-size: 4rem;
+    }
+
+    #sobremi,
+    #portafolio,
+    #estudios {
+        margin-top: 5rem;
+        scroll-margin-top: 4rem;
+    }
+    
+    .sobremi {
+        padding: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    
+    .sobremi__cont {
+        gap: 3rem;
+        padding: 4rem;
+    }
+
+    .sobremi__foto {
+        max-width: 220px;
+    }
+
+    .sobremi__inf {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 0;
+    }
+
+    .portafolio,
+    .estudios,
+    .contacto__txt {
+        padding-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .estudios__cont {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .estudios__columna {
+        max-width: 280px;
+    }
+
+    .contacto__redes {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .portafolio__cont {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .project-info {
+        padding: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    .project-description {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .github-link {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* MEJORAS DE ACCESIBILIDAD Y UX */
+@media (hover: none) {
+    .btn-red:hover,
+    .social-icons a:hover img,
+    .social-icons a:hover span {
+        transform: none;
+    }
+}
+
+/* Smooth scroll mejorado */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

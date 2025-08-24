@@ -3,123 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Braian Silva, desarrollador web en Uruguay. Especializado en crear sitios web modernos y funcionales.">
+    
     <title>Braian Silva | Desarrollador Web</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
-    <header class="header">
-            
-        <nav class="nav">
-            <a href="#inicio" class="nav__logo">B<span>S</span></a>
-            <ul class="nav__list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar">
+        
+        <div class="logo">
+            <a href="#inicio"><img src="img/Logo BS.webp" alt="Logo Braian Silva" loading="lazy"></a>
+        </div>
 
-    </header>
+        <!-- Botón Hamburguesa -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#inicio" class="menu-link">Inicio</a></li>
+            <li><a href="#sobremi" class="menu-link">Sobre mí</a></li>
+            <li><a href="#portafolio" class="menu-link">Portafolio</a></li>
+            <li><a href="#estudios" class="menu-link">Estudios</a></li>
+            <li><a href="#contacto" class="menu-link">Contacto</a></li>
+        </ul>
+
+        <!-- ICONOS DE REDES -->
+        <div class="social-icons">
+            <a href="cv/CV Braian Silva.pdf">
+            <img src="img/dowload.webp" alt="Descargar CV" loading="lazy"><span class="cv-download">Descargar CV</span>
+            </a>
+            
+            <a href="https://github.com/braiansilva-dev" target="_blank" rel="noopener noreferrer">
+            <img src="img/github.webp" alt="GitHub" loading="lazy">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/braiansilvadioni/" target="_blank" rel="noopener noreferrer">
+            <img src="img/linkedin.webp" alt="LinkedIn" loading="lazy">
+            </a>
+        </div>
+
+        </nav>
+  </header>
     
+    <!--      INICIO     -->
     <main class="inicio" id="inicio">
         <div class="inicio__img"> 
             
-            <h3 class="inicio__nombre">Braian Silva</h3>
+            <h5>Bienvenidos,</h5>
+            <h3 class="inicio__nombre">Soy <span class="spanNombre">Braian Silva</span></h3>
             <p class="inicio__parrafo">Estudiante de <span>JaP</span></p>
+            <a href="#portafolio" class="btn-portafolio">Portafolio</a>
         </div>
     </main>
 
+    <!--      SOBRE MI     -->
     <section id="sobremi">
-        <h2 class="sobremi">Sobre Mi</h2>
-        <div class="sobremi__cont">
-            <img class="sobremi__foto" src="fotos/perfil.jpg" alt="Foto de perfil Braian Silva"> 
-            <p class="sobremi__inf">Hola soy Braian, estudiante de Programación web con aspiración a desarrollador full stack,
-                Actualmente formo parte del programa Jóvenes a Programar y también me capacito de forma
-                autodidacta. 
-                Me interesa crear sitios web modernos y funcionales y estoy en proceso de desarrollar mis
-                propios proyectos.
-                Vivo en Maldonado, Uruguay. Y mi objetivo es comenzar a trabajar como desarrollador para seguir
-                aprendiendo, creciendo y aportando soluciones digitales.
-            </p>
+        <div class="contenedor">
+            <h2 class="sobremi">Sobre Mi</h2>
+            <div class="sobremi__cont">
+                <img class="sobremi__foto" src="img/perfil.webp" alt="Foto de perfil Braian Silva" loading="lazy">
+                <p class="sobremi__inf">Hola soy Braian, estudiante de Programación web con aspiración a desarrollador full stack, <br>
+                    Actualmente formo parte del programa Jóvenes a Programar y también me capacito de forma
+                    autodidacta. <br>
+                    Me interesa crear sitios web modernos y funcionales y estoy en proceso de desarrollar mis
+                    propios proyectos. <br>
+                    Vivo en Maldonado, Uruguay. Y mi objetivo es comenzar a trabajar como desarrollador para seguir
+                    aprendiendo, creciendo y aportando soluciones digitales.
+                </p>
+            </div>
         </div>
     </section>
     
+    <!--      PORTAFOLIO     -->
+    <section id="portafolio">
+        <div class="contenedor">
+            <h2 class="portafolio">Portafolio</h2>
+            <div class="portafolio__cont" id="portafolioContainer">
+                <!-- Aquí se cargarán los proyectos dinámicamente -->
+            
+            </div>
+        </div>
+    </section>
+
+    <!--      ESTUDIOS     -->
     <section id="estudios">
-        <h2 class="estudios">Estudios / Habilidades</h2>
-        <div class="estudios__cont">
-            <div class="estudios__columna">
-                <h4>Mis estudios son:</h4>
-                <ul class="estudios__lista">
-                    <li>Bachillerato Completo</li>
-                    <li>Ciberseguridad Principiante</li>
-                    <li>Jóvenes a Programar</li>
-                    <li>Autodidacta</li>
-                </ul>
-            </div>
-            <div class="estudios__columna">
-                <h4>Mis habilidades son:</h4>
-                <ul class="estudios__lista">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+        <div class="contenedor">
+            <h2 class="estudios">Estudios / Habilidades</h2>
+            <div class="estudios__cont">
+                <div class="estudios__columna">
+                    <h4>Mis estudios son:</h4>
+                    <ul class="estudios__lista">
+                        <li>Bachillerato Completo</li>
+                        <li>Ciberseguridad Principiante</li>
+                        <li>Jóvenes a Programar</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                </div>
+                <div class="estudios__columna">
+                    <h4>Mis habilidades son:</h4>
+                    <ul class="estudios__lista">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2 class="contacto__txt">Contacto</h2>
-        
-        <div class="contacto__redes">
-            <a href="https://github.com/braiansilva-dev" class="btn-red" target="_blank">
-                <img src="img/github.png" alt="GitHub" class="btn-icon"> GitHub
-            </a>
 
-            <a href="https://www.linkedin.com/in/braiansilvadioni/" class="btn-red" target="_blank">
-                <img src="img/linkedin.png" alt="LinkedIn" class="btn-icon"> LinkedIn
-            </a>
-
-            <a href="cv/CV Braian Silva.pdf" class="btn-red" download>
-                <img src="img/dowload.png" alt="Descargar CV" class="btn-icon"> Descargar CV
-            </a>
-        </div>
-
-        
-        <div>
-            <form class="form">
-                <fieldset class="form__fiel">
-                    
-                    <div class="form__formulario">
-                        <label class="form__label" for="nombre">Nombre:</label>
-                        <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-                    
-                    <div class="form__formulario">
-                        <label class="form__label" for="correo">Email:</label>
-                        <input class="form__input" type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.com" required>
-                    </div>
-                    
-                    <div class="form__formulario">
-                        <label class="form__label" for="mensaje">Mensaje:</label>
-                        <textarea class="form__input" id="mensaje" name="mensaje" placeholder="Tu Mensaje" required></textarea>
-                    </div>
-                    
-                    <button class="form__btn" type="submit">Enviar</button>
-                </fieldset>
-
-            </form>
+    <!--      CONTACTO     -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor">
+            <h2 class="contacto__txt">Contacto</h2>
+            
+            <div class="contacto__redes">
+                
+                <a href="mailto:braiansilva4@gmail.com" class="btn-red" rel="noopener noreferrer" aria-label="Enviar correo electrónico">
+                    <img src="img/email.webp" alt="Email" class="btn-icon" loading="lazy"> Enviar correo
+                </a>
+            
+                <a href="https://github.com/braiansilva-dev" class="btn-red" target="_blank" rel="noopener noreferrer">
+                    <img src="img/github.webp" alt="GitHub" class="btn-icon" loading="lazy"> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/braiansilvadioni/" class="btn-red" target="_blank" rel="noopener noreferrer">
+                    <img src="img/linkedin.webp" alt="LinkedIn" class="btn-icon" loading="lazy"> LinkedIn
+                </a>
+                <a href="cv/CV Braian Silva.pdf" class="btn-red" download>
+                    <img src="img/dowload.webp" alt="Descargar CV" class="btn-icon" loading="lazy"> Descargar CV
+                </a>
+            </div>
         </div>
     </section>
     
+    <!--      FOOTER     -->
     <footer>
         <div class="footer">
-            <p class="footer_p">Todos los derechos reservados Braian Silva 2025</p>
+            <p class="footer_p">© 2025 Braian Silva</p>
         </div>
     </footer>
+    
+    <script src="JS/script.js" defer></script>
 </body>
 </html>
