@@ -13,6 +13,10 @@
         display: block;
     }
 
+    .navbar {
+        justify-content: space-around;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -135,6 +139,7 @@
 
     .navbar {
         padding: 0.5rem 0;
+        justify-content: space-around;
     }
 
     .inicio__img {
